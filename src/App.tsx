@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.scss'
-import Contents from './features/Contents/Contents';
-import Login from './features/Login/Login'
+import Contents from './components/Contents/Contents';
+import Login from './components/Login/Login'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
