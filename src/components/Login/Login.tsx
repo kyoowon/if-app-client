@@ -13,10 +13,10 @@ export default function Login({} : Props) {
       <video src={SplashVideo} autoPlay loop muted />
       <div className={styles.overlay} />
       <div className={styles.contents}>
-        <h1 className={styles.h1}>if</h1>
-        <span className={styles.span}>당신과 연인 사이에 100문 100답</span>
+        <h1>if</h1>
+        <span>당신과 연인 사이에 100문 100답</span>
       </div>
-      <a href={KAKAO_AUTH_URL}><img src={kakaoButton} /></a>
+      <a className={styles.kakao_botton} href={KAKAO_AUTH_URL}><img src={kakaoButton} /></a>
     </div>
   );
 }
