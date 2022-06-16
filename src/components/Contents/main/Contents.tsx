@@ -18,12 +18,11 @@ export default function Contents({ }: Props) {
   useEffect(() => {
     const options = {
       strings: [
-        'Some <i>strings</i> are slanted',
-        'Some <strong>strings</strong> are bold',
-        'HTML characters &times; &copy;'
+        '애인이 남사친 혹은 여사친과 놀러간다고 한다면?',
+        '애인을 가장 사랑하는 부분은?'
       ],
       typeSpeed: 50,
-      backSpeed: 50,
+      backSpeed: 70,
     };
 
     // elRef refers to the <span> rendered below
@@ -39,12 +38,12 @@ export default function Contents({ }: Props) {
   return (
     <div className={Styles.Contents}>
       <Navbar />
-      <div className="type-wrap">
-        <span style={{ whiteSpace: 'pre' }} ref={el} />
+      <div className="user-info">
+        <img className="user-me" />
+        <img className="user-other"/>
       </div>
-      <div>
-        <img />
-        <img />
+      <div className={Styles.type_wrap}>
+        <span style={{ whiteSpace: 'pre' }} ref={el} />
       </div>
       <Button variant="outlined" color="secondary">시작하기</Button>
     </div>
